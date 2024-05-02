@@ -1,1 +1,3 @@
-# kubernets
+### Kubernetes Resource Repository
+
+Welcome to the Kubernetes Resource Repository! As I prepare for the Certified Kubernetes and Cloud Native Associate (KCNA) exam and work within AWS environments, I've developed this comprehensive collection of notes and scripts that are applicable to both AWS and local development environments like Minikube. This repository includes detailed guidelines for setting up Minikube, deploying clusters with eksctl, and managing Kubernetes operations. Whether you are studying for the KCNA exam or simply looking to enhance your practical Kubernetes skills, this resource offers valuable insights and tools that cater to a variety of platforms and use cases.
