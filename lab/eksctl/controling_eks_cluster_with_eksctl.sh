@@ -1,6 +1,5 @@
-#!/bin/bash
-
 source .env
+#!/bin/bash
 
 echo "cluster name: $CLUSTER_NAME"
 echo "region: $REGION"
@@ -15,9 +14,9 @@ while true; do
     case $choice in
         1)
             eksctl create cluster --name "$CLUSTER_NAME" --region "$REGION" \
-		--zones us-east-1a,us-east-1b,us-east-1c \
-		--nodegroup-name "$NODES_NAME" --node-type t2.micro --nodes 2 --node-zones us-east-1a,us-east-1b
-
+                --zones us-east-1a,us-east-1b,us-east-1c \
+                --nodegroup-name "$NODES_NAME" --node-type t2.micro --nodes 2 --node-zones us-east-1a,us-east-1b \
+                --node-ami-family AmazonLinux2
             ;;
         2)
             eksctl delete cluster --name "$CLUSTER_NAME" --region "$REGION"
@@ -31,3 +30,4 @@ while true; do
             ;;
     esac
 done
+

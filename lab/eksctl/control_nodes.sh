@@ -1,2 +1,2 @@
-eksctl scale nodegroup --cluster s33ding --name my-nodes --nodes 3
+eksctl scale nodegroup --cluster s33ding --name my-nodes --nodes 2
 
